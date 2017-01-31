@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css?1500">
+
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+<script src="./js/d3.min.js"></script>
+
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
+<script src="./js/legend.js" type="text/javascript"></script> 
+<script src="./js/groupedBar.js" type="text/javascript"></script> 
+<script src="./js/stackedBar.js" type="text/javascript"></script> 
+<script src="./js/stackedBar2.js" type="text/javascript"></script> 
+<script src="./js/pieChart.js" type="text/javascript"></script> 
+
+
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+<body>
+<div data-role="page">
+	  <div data-role="header" id="header">
+		<img id="headerImg"src="./images/header.png"></img>
+	  </div>
+		  
+	<div data-role="main" class="ui-content" id="content">
+	   <div data-role="collapsible" data-collapsed="false" id="filterCollaps">
+		<h4>Filter</h4>
+		  <div id="filter">
+			<div class="ui-field-contain">
+			<label id="filterLabel" for="select-custom-20">Categorie </label>
+			</div>
+		  </div>
+		  
+		<div id="options">
+			<label id="filterLabel">
+				<input type="checkbox" name="checkbox-0 " class="sort" id="sort">Sorteer</input>
+			</label>
+		</div>
+	  </div>
+	  
+		  <div data-role="collapsible" id="extraInfo">
+			<h4>Extra informatie</h4>
+			  <div>
+				<h1>Aantal leerlingen 2e en 3e graad Algemeen Secundair onderwijs (ASO)</h1>
+				<h3>Totaal leeringen per jaar</h3>
+				<div id="table">
+					<ul id="totals"></ul>
+				</div>
+				
+				<h3>Aantal geanalyseerde gegevens(records)</h3>
+				<h2 id="records"></h2>
+			  </div>
+		  </div>
+		  
+		   <div data-role="collapsible" data-collapsed="false" id="dashboard">
+			<h4>Dashboard visualisatie</h4>
+		   </div>
+	  </div>
+	
+	  <div data-role="footer" id="footer">
+		<h2>El-Baroudi Moussa - KdG Keuzevak UX</h2>
+		<a target="_black" href="http://opendata.antwerpen.be/datasets/buurtmonitor-leerlingen-het-basisonderwijs-volgens-woonplaats-district">Dataset: opendata.antwerpen.be</a>
+	  </div>
+
+  </div>
+</body>
+</html>
+<script src="./js/index.js" type="text/javascript"></script> 
